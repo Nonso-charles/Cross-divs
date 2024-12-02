@@ -1,54 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cross Divs</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross Positioned Cards</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="title-container">
-<h2 class="title-text">Reliable. efficient delivery.</h2>
-<h1 class="header">Powered by Technology</h1>
-<p class="sub-text">Our artificial intelligence powered tools uses millions of projects data points to ensure that your project is succesful</p>
-    </div>
+  <section class="features">
+    <h1>Reliable, efficient delivery</h1>
+    <h2>Powered by Technology</h2>
+    <p>
+      Our Artificial Intelligence-powered tools use millions of project data points 
+      to ensure that your project is successful.
+    </p>
 
-<div class="container">
-    <div class="box top red">
-        <h1 class="title-header">Team Builder</h1>
-        <p class="text">Scan our talent network to create the optimal team for your project</p>
+    <div class="card-container">
+      <div class="card top"> <!-- Top Card -->
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
         <div class="icon-container">
-      <img src="partners.png" alt="" class="icon">
+        <img src="partners.png" alt="" class="icon">    
         </div>
-
-    </div>
-    
-        <div class="box bottom yellow">
-        <h1 class="title-header">Karma</h1>
-        <p class="text">Regularly evaluate our talent to ensure quality</p>
+      </div>
+      <div class="card left"> <!-- Left Card -->
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
         <div class="icon-container">
-        <img src="idea.png" alt="" class="icon">
+       <img src="glass.png" alt="" class="icon">     
         </div>
-    </div>
-    
-        <div class="box left green">
-        <h1 class="title-header">Superior</h1>
-        <p class="text">Monitor activities to identify project roadblocks</p>
+      </div>
+      <div class="card right"> <!-- Right Card -->
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
         <div class="icon-container">
-        <img src="glass.png" alt="" class="icon">
+       <img src="monitor.png" alt="" class="icon">     
         </div>
-    </div>
-    
-        <div class="box right blue">
-        <h1 class="title-header">Calculator</h1>
-        <p class="text">Using data from past projects to provide better delivery estimates</p>
+      </div>
+      <div class="card bottom"> <!-- Bottom Card -->
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
         <div class="icon-container">
-        <img src="monitor.png" alt="" class="icon">
+     <img src="idea.png" alt="" class="icon">       
         </div>
+      </div>
     </div>
-</div>
+  </section>
 </body>
-
 </html>

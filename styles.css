@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.features h1 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-top: 50px;
+}
+
+.features h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.features p {
+    font-size: 1rem;
+    color: #777;
+    margin: 10px 0 40px;
+    line-height: 1.5;
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-areas:
+        ". top ."
+        "left center right"
+        ". bottom .";
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 280px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.icon-container {
+    text-align: right;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Specific Card Styles */
+.card.top {
+    grid-area: top;
+    border-top: 4px solid red;
+}
+
+.card.left {
+    grid-area: left;
+    border-top: 4px solid teal;
+}
+
+.card.right {
+    grid-area: right;
+    border-top: 4px solid blue;
+}
+
+.card.bottom {
+    grid-area: bottom;
+    border-top: 4px solid orange;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-areas:
+            "top"
+            "left"
+            "center"
+            "right"
+            "bottom";
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
